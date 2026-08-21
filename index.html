@@ -150,11 +150,13 @@
             <div class="flex justify-between items-center">
                 <a href="#home" class="text-2xl font-bold gradient-text">Reza Khanahmadloo</a>
 
-                <ul class="hidden md:flex space-x-8">
+                <ul class="hidden md:flex space-x-6">
                     <li><a href="#home" class="hover:text-aurora-green transition">Home</a></li>
                     <li><a href="#about" class="hover:text-aurora-green transition">About</a></li>
+                    <li><a href="#experience" class="hover:text-aurora-green transition">Experience</a></li>
                     <li><a href="#skills" class="hover:text-aurora-green transition">Skills</a></li>
                     <li><a href="#projects" class="hover:text-aurora-green transition">Projects</a></li>
+                    <li><a href="#posts" class="hover:text-aurora-green transition">Posts</a></li>
                     <li><a href="#education" class="hover:text-aurora-green transition">Education</a></li>
                     <li><a href="#contact" class="hover:text-aurora-green transition">Contact</a></li>
                 </ul>
@@ -169,8 +171,10 @@
             <div id="mobileMenu" class="hidden md:hidden mt-4 space-y-2">
                 <a href="#home" class="block py-2 hover:text-aurora-green">Home</a>
                 <a href="#about" class="block py-2 hover:text-aurora-green">About</a>
+                <a href="#experience" class="block py-2 hover:text-aurora-green">Experience</a>
                 <a href="#skills" class="block py-2 hover:text-aurora-green">Skills</a>
                 <a href="#projects" class="block py-2 hover:text-aurora-green">Projects</a>
+                <a href="#posts" class="block py-2 hover:text-aurora-green">Posts</a>
                 <a href="#education" class="block py-2 hover:text-aurora-green">Education</a>
                 <a href="#contact" class="block py-2 hover:text-aurora-green">Contact</a>
             </div>
@@ -252,52 +256,154 @@
             <h2 class="text-4xl font-bold text-center mb-12 gradient-text">About Me</h2>
 
             <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-                <div class="space-y-6">
+                <div class="space-y-5">
                     <p class="text-gray-400 leading-relaxed">
-                        I focus on building reliable data pipelines and modern analytics platforms that transform
-                        raw data into trusted, analytics-ready datasets.
+                        Data Professional with a strong foundation in Analytics, Data Engineering, and Business Intelligence.
+                        Experienced in SQL, Python, and data modeling, with hands-on knowledge of building data pipelines,
+                        transforming and validating data, and supporting data-driven decision-making.
                     </p>
 
                     <p class="text-gray-400 leading-relaxed">
-                        My technical interests include ETL/ELT, batch and real-time stream processing,
-                        workflow orchestration, cloud data platforms, lakehouse architectures, data modeling,
-                        data warehousing, CI/CD, monitoring, and containerized infrastructure.
+                        Skilled in working with modern data platforms and technologies including PostgreSQL,
+                        Apache Spark, PySpark, Kafka, Airflow, dbt, Databricks, Microsoft Fabric, and Azure data services.
+                        Familiar with both batch and streaming data architectures, data warehousing, lakehouse concepts,
+                        and data quality practices.
                     </p>
 
                     <p class="text-gray-400 leading-relaxed">
-                        I enjoy collaborating with architects, software engineers, and DevOps teams,
-                        and I bring a problem-solving mindset, analytical thinking, and a strong commitment
-                        to continuous learning and quality delivery.
+                        My background in data analysis has given me extensive experience working with structured data,
+                        reporting, analytics, dashboard development, and translating business requirements into data solutions.
                     </p>
 
-                    <div class="grid grid-cols-2 gap-4 pt-4">
-                        <div class="bg-dark-card p-4 rounded-lg border border-dark-border">
-                            <div class="text-xl font-bold text-aurora-green">ETL / ELT</div>
-                            <div class="text-sm text-gray-400">Pipeline Design</div>
+                    <p class="text-gray-400 leading-relaxed">
+                        I also have experience teaching statistics and working with IBM SPSS Statistics,
+                        which further developed my analytical thinking, statistical reasoning, and data interpretation skills.
+                    </p>
+
+                    <p class="text-gray-400 leading-relaxed">
+                        Currently, I am focused on expanding my expertise in Data Engineering, cloud-based data platforms,
+                        distributed data processing, and modern data architectures. I am passionate about building scalable,
+                        reliable, and high-quality data solutions that enable organizations to make better decisions from their data.
+                    </p>
+                </div>
+
+                <!-- Profile photo -->
+                <div class="relative">
+                    <div class="w-80 h-80 mx-auto rounded-full bg-gradient-to-br from-aurora-green via-aurora-blue to-aurora-purple p-1">
+                        <div class="relative w-full h-full rounded-full bg-dark-bg overflow-hidden flex items-center justify-center">
+                            <!-- Fallback icon is visible if mypic.png has not been uploaded yet -->
+                            <i class="fas fa-user text-7xl gradient-text absolute"></i>
+
+                            <!-- Upload mypic.png to the repository root, next to index.html -->
+                            <img
+                                src="mypic.png"
+                                alt="Reza Khanahmadloo"
+                                class="relative z-10 w-full h-full rounded-full object-cover"
+                                onerror="this.style.display='none';"
+                            >
+                        </div>
+                    </div>
+
+                    <p class="text-center text-sm text-gray-500 mt-4">
+                        Data Engineering · Analytics · Cloud Data Platforms
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience section -->
+    <section id="experience" class="py-20 bg-dark-card/30">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-4 gradient-text">Experience</h2>
+
+            <p class="text-gray-400 text-center max-w-3xl mx-auto mb-12">
+                Professional and hands-on experience across data analytics, data engineering, and modern data platforms.
+            </p>
+
+            <div class="max-w-5xl mx-auto space-y-8">
+
+                <!-- Experience 1: Based on the LinkedIn experience provided -->
+                <div class="relative pl-8 border-l-2 border-aurora-green">
+                    <div class="absolute -left-2 top-0 w-4 h-4 bg-aurora-green rounded-full"></div>
+
+                    <div class="bg-dark-card p-6 rounded-lg card-hover">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-3">
+                            <div>
+                                <h3 class="text-xl font-semibold text-aurora-green">
+                                    Data Analytics Associate (TechLabs Project)
+                                </h3>
+                                <p class="text-gray-300 font-medium">TechLabs Copenhagen · Part-time</p>
+                            </div>
+
+                            <span class="text-sm text-gray-400 whitespace-nowrap">
+                                Feb 2026 – Jun 2026 · 5 mos
+                            </span>
                         </div>
 
-                        <div class="bg-dark-card p-4 rounded-lg border border-dark-border">
-                            <div class="text-xl font-bold text-aurora-blue">Batch + Streaming</div>
-                            <div class="text-sm text-gray-400">Data Processing</div>
-                        </div>
+                        <p class="text-sm text-gray-500 mb-4">
+                            Copenhagen, Capital Region of Denmark, Denmark · Hybrid
+                        </p>
 
-                        <div class="bg-dark-card p-4 rounded-lg border border-dark-border">
-                            <div class="text-xl font-bold text-aurora-purple">Cloud</div>
-                            <div class="text-sm text-gray-400">Data Platforms</div>
-                        </div>
-
-                        <div class="bg-dark-card p-4 rounded-lg border border-dark-border">
-                            <div class="text-xl font-bold text-aurora-pink">Analytics-Ready</div>
-                            <div class="text-sm text-gray-400">Data Modeling</div>
-                        </div>
+                        <p class="text-gray-400">
+                            Collaborated in a multidisciplinary team to develop an Intelligent Career Recommendation System,
+                            with a focus on data collection, data preparation, analytics, and supporting the development
+                            of data-driven recommendation features.
+                        </p>
                     </div>
                 </div>
 
-                <div class="relative">
-                    <div class="w-80 h-80 mx-auto rounded-full bg-gradient-to-br from-aurora-green via-aurora-blue to-aurora-purple p-1">
-                        <div class="w-full h-full rounded-full bg-dark-bg flex items-center justify-center">
-                            <i class="fas fa-database text-7xl gradient-text"></i>
+                <!-- Experience 2: Temporary sample - replace later -->
+                <div class="relative pl-8 border-l-2 border-aurora-blue">
+                    <div class="absolute -left-2 top-0 w-4 h-4 bg-aurora-blue rounded-full"></div>
+
+                    <div class="bg-dark-card p-6 rounded-lg card-hover">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-3">
+                            <div>
+                                <h3 class="text-xl font-semibold text-aurora-blue">Data Engineer</h3>
+                                <p class="text-gray-300 font-medium">Company / Project Name · Update Later</p>
+                            </div>
+
+                            <span class="text-sm text-gray-400 whitespace-nowrap">
+                                Dates · Update Later
+                            </span>
                         </div>
+
+                        <p class="text-sm text-gray-500 mb-4">
+                            Denmark / Remote · Update Later
+                        </p>
+
+                        <p class="text-gray-400">
+                            Built and maintained data pipelines using Python, SQL, Spark, and cloud data services.
+                            Worked with data ingestion, transformation, validation, orchestration, and analytics-ready data models.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Experience 3: Temporary sample - replace later -->
+                <div class="relative pl-8 border-l-2 border-aurora-purple">
+                    <div class="absolute -left-2 top-0 w-4 h-4 bg-aurora-purple rounded-full"></div>
+
+                    <div class="bg-dark-card p-6 rounded-lg card-hover">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-3">
+                            <div>
+                                <h3 class="text-xl font-semibold text-aurora-purple">Data Engineer</h3>
+                                <p class="text-gray-300 font-medium">Company / Project Name · Update Later</p>
+                            </div>
+
+                            <span class="text-sm text-gray-400 whitespace-nowrap">
+                                Dates · Update Later
+                            </span>
+                        </div>
+
+                        <p class="text-sm text-gray-500 mb-4">
+                            Denmark / Hybrid · Update Later
+                        </p>
+
+                        <p class="text-gray-400">
+                            Worked with batch and streaming data architectures, data quality, cloud data platforms,
+                            data warehousing, lakehouse concepts, and CI/CD practices for reliable data delivery.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -305,7 +411,7 @@
     </section>
 
     <!-- Technical skills section -->
-    <section id="skills" class="py-20 bg-dark-card/30">
+    <section id="skills" class="py-20">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Technical Skills</h2>
 
@@ -591,8 +697,113 @@
         </div>
     </section>
 
+    <!-- LinkedIn posts section -->
+    <section id="posts" class="py-20 bg-dark-card/30">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-4 gradient-text">LinkedIn Posts</h2>
+
+            <p class="text-gray-400 text-center max-w-3xl mx-auto mb-12">
+                I regularly share practical content about Data Engineering, analytics, data quality,
+                cloud platforms, distributed processing, and modern data architectures.
+            </p>
+
+            <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+
+                <!-- Post 1 - Replace title, description, date, and URL with your actual LinkedIn post -->
+                <article class="bg-dark-card rounded-lg overflow-hidden card-hover">
+                    <div class="h-36 bg-gradient-to-br from-aurora-green to-aurora-blue flex items-center justify-center">
+                        <i class="fab fa-linkedin text-5xl text-dark-bg"></i>
+                    </div>
+
+                    <div class="p-6">
+                        <div class="text-sm text-gray-500 mb-2">LinkedIn Post · Update Date</div>
+
+                        <h3 class="text-xl font-semibold mb-3">
+                            Data Engineering Post #1
+                        </h3>
+
+                        <p class="text-gray-400 mb-5">
+                            Replace this text with a short summary of one of your LinkedIn posts.
+                            Keep the summary focused on the problem, architecture, technology, and key takeaway.
+                        </p>
+
+                        <a href="https://www.linkedin.com/in/reza-khanahmadloo/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="text-aurora-green hover:text-aurora-blue transition">
+                            View on LinkedIn <i class="fas fa-arrow-up-right-from-square ml-1"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Post 2 - Replace with an actual LinkedIn post -->
+                <article class="bg-dark-card rounded-lg overflow-hidden card-hover">
+                    <div class="h-36 bg-gradient-to-br from-aurora-blue to-aurora-purple flex items-center justify-center">
+                        <i class="fas fa-database text-5xl text-dark-bg"></i>
+                    </div>
+
+                    <div class="p-6">
+                        <div class="text-sm text-gray-500 mb-2">LinkedIn Post · Update Date</div>
+
+                        <h3 class="text-xl font-semibold mb-3">
+                            Data Engineering Post #2
+                        </h3>
+
+                        <p class="text-gray-400 mb-5">
+                            Use this card for a technical post about pipelines, Spark, Kafka,
+                            Microsoft Fabric, Azure, data quality, or another topic you publish.
+                        </p>
+
+                        <a href="https://www.linkedin.com/in/reza-khanahmadloo/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="text-aurora-blue hover:text-aurora-green transition">
+                            View on LinkedIn <i class="fas fa-arrow-up-right-from-square ml-1"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Post 3 - Replace with an actual LinkedIn post -->
+                <article class="bg-dark-card rounded-lg overflow-hidden card-hover">
+                    <div class="h-36 bg-gradient-to-br from-aurora-purple to-aurora-pink flex items-center justify-center">
+                        <i class="fas fa-diagram-project text-5xl text-dark-bg"></i>
+                    </div>
+
+                    <div class="p-6">
+                        <div class="text-sm text-gray-500 mb-2">LinkedIn Post · Update Date</div>
+
+                        <h3 class="text-xl font-semibold mb-3">
+                            Data Engineering Post #3
+                        </h3>
+
+                        <p class="text-gray-400 mb-5">
+                            Add the post title, a short description, and the direct LinkedIn post URL.
+                            You can duplicate this card whenever you want to add another post.
+                        </p>
+
+                        <a href="https://www.linkedin.com/in/reza-khanahmadloo/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="text-aurora-purple hover:text-aurora-green transition">
+                            View on LinkedIn <i class="fas fa-arrow-up-right-from-square ml-1"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="text-center mt-10">
+                <a href="https://www.linkedin.com/in/reza-khanahmadloo/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="inline-block px-8 py-3 border-2 border-aurora-blue rounded-full hover:bg-aurora-blue hover:text-dark-bg transition transform hover:scale-105">
+                    View All LinkedIn Activity
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Education and qualifications section -->
-    <section id="education" class="py-20 bg-dark-card/30">
+    <section id="education" class="py-20">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Education & Qualifications</h2>
 
