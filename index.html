@@ -843,90 +843,180 @@
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-4 gradient-text">LinkedIn Posts</h2>
             <p class="text-gray-400 text-center max-w-3xl mx-auto mb-12">
-                A growing collection of practical posts about data engineering, data quality, Apache Spark,
-                streaming, cloud data platforms, architecture, and lessons learned from hands-on projects.
+                A growing collection of practical posts about data engineering, data architecture,
+                cloud platforms, databases, ETL, and lessons learned from hands-on projects.
             </p>
 
             <div class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                <!-- Post card template 1 -->
+                <!-- LinkedIn Post: Cloud and On-Prem -->
                 <article class="bg-dark-card rounded-lg overflow-hidden card-hover">
-                    <div class="relative h-48 bg-gradient-to-br from-aurora-green to-aurora-blue flex items-center justify-center overflow-hidden">
-                        <i class="fab fa-linkedin text-6xl text-dark-bg/80 absolute"></i>
-                        <!-- Replace with your post image, for example: posts/data-quality-day-1.jpg -->
-                        <img src="posts/post-1.jpg"
-                             alt="LinkedIn post preview"
-                             class="relative z-10 w-full h-full object-cover"
-                             onerror="this.style.display='none';">
+                    <div class="h-64 bg-white flex items-center justify-center overflow-hidden p-2">
+                        <img src="posts/Cloud_and_On_Prem.jpg"
+                             alt="Cloud and On-Prem Data Architecture LinkedIn post"
+                             loading="lazy"
+                             class="w-full h-full object-contain">
                     </div>
                     <div class="p-6">
                         <div class="text-xs uppercase tracking-wider text-aurora-green mb-2">LinkedIn Post</div>
-                        <h3 class="text-xl font-semibold mb-3">Add Your Latest Data Engineering Post</h3>
-                        <p class="text-gray-400 mb-5">
-                            Add a short 1–2 sentence summary explaining the topic, architecture, practical lesson, or key takeaway.
-                        </p>
-                        <!-- Replace the URL below with the direct LinkedIn post URL -->
-                        <a href="https://www.linkedin.com/in/reza-khanahmadloo/"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="text-aurora-green hover:text-aurora-blue transition">
+                        <h3 class="text-xl font-semibold mb-3">Cloud vs On-Prem Data Architecture</h3>
+                        <p class="text-gray-400 mb-5">A visual comparison of cloud and on-premises data environments, their architecture, responsibilities, and common use cases.</p>
+                        <a href="https://www.linkedin.com/in/reza-khanahmadloo/recent-activity/all/" target="_blank" rel="noopener noreferrer" class="text-aurora-green hover:text-aurora-blue transition">
                             View on LinkedIn <i class="fas fa-arrow-up-right-from-square ml-1"></i>
                         </a>
                     </div>
                 </article>
 
-                <!-- Post card template 2 -->
+                <!-- LinkedIn Post: ACID -->
                 <article class="bg-dark-card rounded-lg overflow-hidden card-hover">
-                    <div class="relative h-48 bg-gradient-to-br from-aurora-blue to-aurora-purple flex items-center justify-center overflow-hidden">
-                        <i class="fas fa-diagram-project text-6xl text-dark-bg/80 absolute"></i>
-                        <!-- Replace with your post image -->
-                        <img src="posts/post-2.jpg"
-                             alt="LinkedIn post preview"
-                             class="relative z-10 w-full h-full object-cover"
-                             onerror="this.style.display='none';">
+                    <div class="h-64 bg-white flex items-center justify-center overflow-hidden p-2">
+                        <img src="posts/acid.jpg"
+                             alt="ACID in Databases LinkedIn post"
+                             loading="lazy"
+                             class="w-full h-full object-contain">
                     </div>
                     <div class="p-6">
                         <div class="text-xs uppercase tracking-wider text-aurora-blue mb-2">LinkedIn Post</div>
-                        <h3 class="text-xl font-semibold mb-3">Add a Pipeline or Architecture Post</h3>
-                        <p class="text-gray-400 mb-5">
-                            Use this card for a visual architecture, pipeline walkthrough, Spark/Kafka topic, or cloud data platform post.
-                        </p>
-                        <a href="https://www.linkedin.com/in/reza-khanahmadloo/"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="text-aurora-blue hover:text-aurora-green transition">
+                        <h3 class="text-xl font-semibold mb-3">ACID in Databases</h3>
+                        <p class="text-gray-400 mb-5">A practical visual explanation of Atomicity, Consistency, Isolation, and Durability in reliable database transactions.</p>
+                        <a href="https://www.linkedin.com/in/reza-khanahmadloo/recent-activity/all/" target="_blank" rel="noopener noreferrer" class="text-aurora-blue hover:text-aurora-green transition">
                             View on LinkedIn <i class="fas fa-arrow-up-right-from-square ml-1"></i>
                         </a>
                     </div>
                 </article>
 
-                <!-- Post card template 3 -->
+                <!-- LinkedIn Post: Acronyms -->
                 <article class="bg-dark-card rounded-lg overflow-hidden card-hover">
-                    <div class="relative h-48 bg-gradient-to-br from-aurora-purple to-aurora-pink flex items-center justify-center overflow-hidden">
-                        <i class="fas fa-chart-column text-6xl text-dark-bg/80 absolute"></i>
-                        <!-- Replace with your post image -->
-                        <img src="posts/post-3.jpg"
-                             alt="LinkedIn post preview"
-                             class="relative z-10 w-full h-full object-cover"
-                             onerror="this.style.display='none';">
+                    <div class="h-64 bg-white flex items-center justify-center overflow-hidden p-2">
+                        <img src="posts/acronyms.jpg"
+                             alt="Data Engineering Acronyms LinkedIn post"
+                             loading="lazy"
+                             class="w-full h-full object-contain">
                     </div>
                     <div class="p-6">
                         <div class="text-xs uppercase tracking-wider text-aurora-purple mb-2">LinkedIn Post</div>
-                        <h3 class="text-xl font-semibold mb-3">Add a Data Quality or Analytics Post</h3>
-                        <p class="text-gray-400 mb-5">
-                            Highlight a practical framework, data-quality workflow, analytics insight, or reusable engineering pattern.
-                        </p>
-                        <a href="https://www.linkedin.com/in/reza-khanahmadloo/"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="text-aurora-purple hover:text-aurora-green transition">
+                        <h3 class="text-xl font-semibold mb-3">Data Engineering Acronyms</h3>
+                        <p class="text-gray-400 mb-5">A compact reference for common data engineering acronyms and terminology used across modern data platforms.</p>
+                        <a href="https://www.linkedin.com/in/reza-khanahmadloo/recent-activity/all/" target="_blank" rel="noopener noreferrer" class="text-aurora-purple hover:text-aurora-green transition">
+                            View on LinkedIn <i class="fas fa-arrow-up-right-from-square ml-1"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- LinkedIn Post: ADF -->
+                <article class="bg-dark-card rounded-lg overflow-hidden card-hover">
+                    <div class="h-64 bg-white flex items-center justify-center overflow-hidden p-2">
+                        <img src="posts/adf.jpg"
+                             alt="Azure Data Factory LinkedIn post"
+                             loading="lazy"
+                             class="w-full h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs uppercase tracking-wider text-aurora-pink mb-2">LinkedIn Post</div>
+                        <h3 class="text-xl font-semibold mb-3">Azure Data Factory</h3>
+                        <p class="text-gray-400 mb-5">A visual overview of Azure Data Factory and how it supports ingestion, orchestration, transformation, and data movement.</p>
+                        <a href="https://www.linkedin.com/in/reza-khanahmadloo/recent-activity/all/" target="_blank" rel="noopener noreferrer" class="text-aurora-pink hover:text-aurora-green transition">
+                            View on LinkedIn <i class="fas fa-arrow-up-right-from-square ml-1"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- LinkedIn Post: API -->
+                <article class="bg-dark-card rounded-lg overflow-hidden card-hover">
+                    <div class="h-64 bg-white flex items-center justify-center overflow-hidden p-2">
+                        <img src="posts/api.jpg"
+                             alt="APIs in Data Engineering LinkedIn post"
+                             loading="lazy"
+                             class="w-full h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs uppercase tracking-wider text-aurora-green mb-2">LinkedIn Post</div>
+                        <h3 class="text-xl font-semibold mb-3">APIs in Data Engineering</h3>
+                        <p class="text-gray-400 mb-5">A practical overview of APIs as data sources and how they fit into modern ingestion and integration workflows.</p>
+                        <a href="https://www.linkedin.com/in/reza-khanahmadloo/recent-activity/all/" target="_blank" rel="noopener noreferrer" class="text-aurora-green hover:text-aurora-blue transition">
+                            View on LinkedIn <i class="fas fa-arrow-up-right-from-square ml-1"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- LinkedIn Post: AWS Pipeline -->
+                <article class="bg-dark-card rounded-lg overflow-hidden card-hover">
+                    <div class="h-64 bg-white flex items-center justify-center overflow-hidden p-2">
+                        <img src="posts/aws_Data_engineering_pipeline.jpg"
+                             alt="AWS Data Engineering Pipeline LinkedIn post"
+                             loading="lazy"
+                             class="w-full h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs uppercase tracking-wider text-aurora-blue mb-2">LinkedIn Post</div>
+                        <h3 class="text-xl font-semibold mb-3">AWS Data Engineering Pipeline</h3>
+                        <p class="text-gray-400 mb-5">An architecture-focused view of how AWS services can be combined to build an end-to-end data engineering pipeline.</p>
+                        <a href="https://www.linkedin.com/in/reza-khanahmadloo/recent-activity/all/" target="_blank" rel="noopener noreferrer" class="text-aurora-blue hover:text-aurora-green transition">
+                            View on LinkedIn <i class="fas fa-arrow-up-right-from-square ml-1"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- LinkedIn Post: Azure Pipeline -->
+                <article class="bg-dark-card rounded-lg overflow-hidden card-hover">
+                    <div class="h-64 bg-white flex items-center justify-center overflow-hidden p-2">
+                        <img src="posts/azure_data_engineering_pipeline.jpg"
+                             alt="Azure Data Engineering Pipeline LinkedIn post"
+                             loading="lazy"
+                             class="w-full h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs uppercase tracking-wider text-aurora-purple mb-2">LinkedIn Post</div>
+                        <h3 class="text-xl font-semibold mb-3">Azure Data Engineering Pipeline</h3>
+                        <p class="text-gray-400 mb-5">A visual end-to-end Azure pipeline showing how cloud services work together from ingestion to analytics-ready data.</p>
+                        <a href="https://www.linkedin.com/in/reza-khanahmadloo/recent-activity/all/" target="_blank" rel="noopener noreferrer" class="text-aurora-purple hover:text-aurora-green transition">
+                            View on LinkedIn <i class="fas fa-arrow-up-right-from-square ml-1"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- LinkedIn Post: Cloud ETL Services -->
+                <article class="bg-dark-card rounded-lg overflow-hidden card-hover">
+                    <div class="h-64 bg-white flex items-center justify-center overflow-hidden p-2">
+                        <img src="posts/cloud_etl_services.jpg"
+                             alt="Cloud ETL Services LinkedIn post"
+                             loading="lazy"
+                             class="w-full h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs uppercase tracking-wider text-aurora-pink mb-2">LinkedIn Post</div>
+                        <h3 class="text-xl font-semibold mb-3">Cloud ETL Services</h3>
+                        <p class="text-gray-400 mb-5">A comparison-oriented overview of common cloud ETL and data integration services across modern platforms.</p>
+                        <a href="https://www.linkedin.com/in/reza-khanahmadloo/recent-activity/all/" target="_blank" rel="noopener noreferrer" class="text-aurora-pink hover:text-aurora-green transition">
+                            View on LinkedIn <i class="fas fa-arrow-up-right-from-square ml-1"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- LinkedIn Post: Data Engineering Concepts -->
+                <article class="bg-dark-card rounded-lg overflow-hidden card-hover">
+                    <div class="h-64 bg-white flex items-center justify-center overflow-hidden p-2">
+                        <img src="posts/data_engineering_concepts.jpg"
+                             alt="Data Engineering Concepts LinkedIn post"
+                             loading="lazy"
+                             class="w-full h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs uppercase tracking-wider text-aurora-green mb-2">LinkedIn Post</div>
+                        <h3 class="text-xl font-semibold mb-3">Core Data Engineering Concepts</h3>
+                        <p class="text-gray-400 mb-5">A visual reference covering foundational concepts and building blocks used throughout data engineering systems.</p>
+                        <a href="https://www.linkedin.com/in/reza-khanahmadloo/recent-activity/all/" target="_blank" rel="noopener noreferrer" class="text-aurora-green hover:text-aurora-blue transition">
                             View on LinkedIn <i class="fas fa-arrow-up-right-from-square ml-1"></i>
                         </a>
                     </div>
                 </article>
             </div>
 
-            <div class="text-center mt-10">
+            <p class="text-gray-500 text-sm text-center max-w-3xl mx-auto mt-8">
+                New posts will be added here over time. Direct links to individual LinkedIn posts can be connected as the collection is updated.
+            </p>
+
+            <div class="text-center mt-8">
                 <a href="https://www.linkedin.com/in/reza-khanahmadloo/recent-activity/all/"
                    target="_blank"
                    rel="noopener noreferrer"
