@@ -697,6 +697,37 @@
                     Built a structured log analytics workflow with PySpark DataFrame APIs to convert raw web server access logs into queryable columns, validate request data, and answer operational and security-oriented questions without using the RDD API.
                 </p>
 
+                <!-- Business context -->
+                <div class="grid md:grid-cols-3 gap-6 mb-10">
+                    <section class="bg-dark-card border border-dark-border rounded-xl p-6">
+                        <div class="text-aurora-pink text-2xl mb-3"><i class="fas fa-circle-exclamation"></i></div>
+                        <h3 class="text-xl font-semibold mb-3">Business Problem</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            Web servers generate large volumes of raw access logs that are difficult to analyze directly.
+                            Operations and security teams need structured data to understand traffic patterns, monitor failed requests,
+                            identify popular resources, and detect unusually high request activity.
+                        </p>
+                    </section>
+
+                    <section class="bg-dark-card border border-dark-border rounded-xl p-6">
+                        <div class="text-aurora-blue text-2xl mb-3"><i class="fas fa-bullseye"></i></div>
+                        <h3 class="text-xl font-semibold mb-3">Project Objective</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            Transform semi-structured web access logs into a structured Spark DataFrame and build reusable analytical
+                            workflows for traffic, HTTP status, URL, user-agent, bandwidth, and high-frequency request analysis.
+                        </p>
+                    </section>
+
+                    <section class="bg-dark-card border border-dark-border rounded-xl p-6">
+                        <div class="text-aurora-green text-2xl mb-3"><i class="fas fa-chart-line"></i></div>
+                        <h3 class="text-xl font-semibold mb-3">Business Value</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            Provides structured insights for operational monitoring, traffic analysis, bandwidth visibility,
+                            user-agent analysis, and basic security investigation by highlighting abnormal request patterns.
+                        </p>
+                    </section>
+                </div>
+
                 <!-- Architecture -->
                 <section class="mb-10">
                     <h3 class="text-2xl font-semibold mb-6 text-aurora-green">Architecture</h3>
