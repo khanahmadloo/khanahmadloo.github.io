@@ -1,5 +1,3 @@
-````
-```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -186,69 +184,102 @@
     </nav>
 
     <!-- Hero section -->
-    <section id="home" class="min-h-screen flex items-center justify-center pt-20 relative">
-        <div class="container mx-auto px-6 text-center z-10">
-            <div class="animate-slide-up">
-                <p class="text-aurora-green font-semibold tracking-widest uppercase mb-4">Data Engineer Portfolio</p>
+    <section id="home" class="min-h-screen flex items-center pt-24 md:pt-28 pb-14 relative overflow-hidden">
+        <div class="container mx-auto px-6 z-10">
+            <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 xl:gap-14 items-center">
 
-                <h1 class="text-5xl md:text-6xl font-bold mb-4 text-gray-100">
-                    Reza Khanahmadloo
-                </h1>
+                <!-- Hero text -->
+                <div class="animate-slide-up text-center lg:text-left">
+                    <p class="text-aurora-green font-semibold tracking-widest uppercase mb-4">
+                        Data Engineer Portfolio
+                    </p>
 
-                <h2 class="text-2xl md:text-3xl font-semibold gradient-text mb-6">
-                    Data Engineer
-                </h2>
+                    <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold mb-4 text-gray-100">
+                        Reza Khanahmadloo
+                    </h1>
 
-                <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-12">
-                    Building reliable batch and streaming pipelines, data integration workflows, and analytics-ready data solutions.
-                </p>
+                    <h2 class="text-2xl md:text-3xl xl:text-4xl font-semibold gradient-text mb-6">
+                        Data Engineer
+                    </h2>
 
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#projects"
-                       class="px-8 py-3 bg-gradient-to-r from-aurora-green to-aurora-blue rounded-full text-dark-bg font-semibold hover:shadow-lg hover:shadow-aurora-green/50 transition transform hover:scale-105">
-                        View Projects
-                    </a>
+                    <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto lg:mx-0 mb-9 leading-relaxed">
+                        Building reliable batch and streaming pipelines, data integration workflows,
+                        and analytics-ready data solutions.
+                    </p>
 
-                    <!-- Upload your CV to the repository root with the name resume.pdf -->
-                    <a href="resume.pdf"
-                       class="px-8 py-3 border-2 border-aurora-green rounded-full hover:bg-aurora-green hover:text-dark-bg transition transform hover:scale-105">
-                        Download CV
-                    </a>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#projects"
+                           class="px-8 py-3 bg-gradient-to-r from-aurora-green to-aurora-blue rounded-full text-dark-bg font-semibold hover:shadow-lg hover:shadow-aurora-green/50 transition transform hover:scale-105">
+                            View Projects
+                        </a>
+
+                        <!-- Upload your CV to the repository root with the name resume.pdf -->
+                        <a href="resume.pdf"
+                           class="px-8 py-3 border-2 border-aurora-green rounded-full hover:bg-aurora-green hover:text-dark-bg transition transform hover:scale-105">
+                            Download CV
+                        </a>
+                    </div>
+
+                    <!-- Social links -->
+                    <div class="mt-9 flex justify-center lg:justify-start space-x-6">
+                        <a href="https://github.com/khanahmadloo"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="text-2xl hover:text-aurora-green transition"
+                           aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/reza-khanahmadloo/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="text-2xl hover:text-aurora-blue transition"
+                           aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+
+                        <a href="mailto:rezakhanahmadloo@gmail.com"
+                           class="text-2xl hover:text-aurora-purple transition"
+                           aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Social links -->
-                <div class="mt-12 flex justify-center space-x-6">
-                    <a href="https://github.com/khanahmadloo"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="text-2xl hover:text-aurora-green transition"
-                       aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
+                <!-- Data engineering visual -->
+                <div class="relative animate-slide-up lg:pl-4" style="animation-delay: 0.12s;">
+                    <div class="absolute -inset-4 bg-gradient-to-r from-aurora-blue/20 via-aurora-purple/15 to-aurora-pink/20 blur-3xl rounded-3xl"></div>
 
-                    <a href="https://www.linkedin.com/in/reza-khanahmadloo/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="text-2xl hover:text-aurora-blue transition"
-                       aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
+                    <div class="relative overflow-hidden rounded-2xl border border-aurora-blue/40 bg-dark-bg/80 shadow-2xl shadow-aurora-blue/10">
+                        <img src="data-pipeline-hero.png"
+                             alt="Data engineering pipeline connecting databases, code, cloud services, and analytics dashboards"
+                             class="w-full h-auto block"
+                             fetchpriority="high">
 
-                    <a href="mailto:rezakhanahmadloo@gmail.com"
-                       class="text-2xl hover:text-aurora-purple transition"
-                       aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
+                        <!-- Covers the partial heading that existed in the source crop,
+                             while preserving all pipeline icons and the full architecture visual. -->
+                        <div class="absolute top-0 left-0 w-[25%] h-[20%] pointer-events-none"
+                             style="background: linear-gradient(135deg, #070b17 0%, #071126 65%, transparent 100%);">
+                        </div>
+                    </div>
+
+                    <div class="mt-4 flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-gray-400">
+                        <span><i class="fas fa-database text-aurora-green mr-2"></i>Data Sources</span>
+                        <span><i class="fas fa-code text-aurora-blue mr-2"></i>Processing</span>
+                        <span><i class="fas fa-cloud text-aurora-purple mr-2"></i>Cloud</span>
+                        <span><i class="fas fa-chart-line text-aurora-pink mr-2"></i>Analytics</span>
+                    </div>
                 </div>
+
             </div>
         </div>
 
         <!-- Animated particles -->
         <div class="absolute inset-0 overflow-hidden pointer-events-none">
-            <div class="absolute w-2 h-2 bg-aurora-green rounded-full animate-float" style="top: 20%; left: 10%;"></div>
-            <div class="absolute w-2 h-2 bg-aurora-blue rounded-full animate-float" style="top: 60%; left: 80%; animation-delay: 1s;"></div>
-            <div class="absolute w-2 h-2 bg-aurora-purple rounded-full animate-float" style="top: 40%; left: 60%; animation-delay: 2s;"></div>
-            <div class="absolute w-2 h-2 bg-aurora-pink rounded-full animate-float" style="top: 80%; left: 30%; animation-delay: 3s;"></div>
+            <div class="absolute w-2 h-2 bg-aurora-green rounded-full animate-float" style="top: 20%; left: 8%;"></div>
+            <div class="absolute w-2 h-2 bg-aurora-blue rounded-full animate-float" style="top: 64%; left: 88%; animation-delay: 1s;"></div>
+            <div class="absolute w-2 h-2 bg-aurora-purple rounded-full animate-float" style="top: 35%; left: 55%; animation-delay: 2s;"></div>
+            <div class="absolute w-2 h-2 bg-aurora-pink rounded-full animate-float" style="top: 82%; left: 28%; animation-delay: 3s;"></div>
         </div>
     </section>
 
@@ -1366,5 +1397,3 @@
     </script>
 </body>
 </html>
-```
-````
