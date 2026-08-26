@@ -609,11 +609,23 @@
                     <p class="text-gray-400">Consolidated and standardized master data across multiple business applications, resolving duplicate and inconsistent records and synchronizing validated data between operational systems.</p>
                 </article>
 
-                <article class="bg-dark-card p-6 rounded-lg card-hover">
-                    <div class="text-aurora-pink text-3xl mb-4"><i class="fas fa-file-lines"></i></div>
-                    <h3 class="text-xl font-semibold mb-2">Access Log Processing & Analytics Pipeline</h3>
-                    <p class="text-sm text-aurora-pink mb-3">Personal Project</p>
+                <article
+                    class="bg-dark-card p-6 rounded-lg card-hover cursor-pointer group"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Open details for Access Log Processing and Analytics Pipeline"
+                    onclick="openProjectModal('accessLogProjectModal')"
+                    onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openProjectModal('accessLogProjectModal'); }">
+                    <div class="flex items-start justify-between gap-4">
+                        <div>
+                            <div class="text-aurora-pink text-3xl mb-4"><i class="fas fa-file-lines"></i></div>
+                            <h3 class="text-xl font-semibold mb-2">Access Log Processing & Analytics Pipeline</h3>
+                            <p class="text-sm text-aurora-pink mb-3">Personal Project</p>
+                        </div>
+                        <i class="fas fa-arrow-up-right-from-square text-gray-500 group-hover:text-aurora-pink transition mt-1"></i>
+                    </div>
                     <p class="text-gray-400">Parsed and transformed raw web access logs using PySpark DataFrame APIs; analyzed traffic, HTTP status, user agents, popular URLs, and high-frequency request patterns.</p>
+                    <p class="mt-4 text-sm text-aurora-pink font-medium">View architecture & project details →</p>
                 </article>
 
                 <article class="bg-dark-card p-6 rounded-lg card-hover">
@@ -653,6 +665,144 @@
         </div>
     </section>
 
+
+    <!-- Access Log project detail modal -->
+    <div id="accessLogProjectModal"
+         class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/75 backdrop-blur-sm p-4"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="accessLogProjectTitle"
+         onclick="if (event.target === this) closeProjectModal('accessLogProjectModal')">
+
+        <div class="relative w-full max-w-5xl max-h-[90vh] overflow-y-auto bg-dark-bg border border-dark-border rounded-2xl shadow-2xl">
+            <button
+                type="button"
+                onclick="closeProjectModal('accessLogProjectModal')"
+                class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-dark-card border border-dark-border hover:border-aurora-pink hover:text-aurora-pink transition"
+                aria-label="Close project details">
+                <i class="fas fa-xmark"></i>
+            </button>
+
+            <div class="p-6 md:p-10">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="px-3 py-1 rounded-full text-xs font-semibold bg-aurora-pink/15 text-aurora-pink border border-aurora-pink/30">Personal Project</span>
+                    <span class="px-3 py-1 rounded-full text-xs font-semibold bg-aurora-blue/15 text-aurora-blue border border-aurora-blue/30">Apache Spark</span>
+                </div>
+
+                <h2 id="accessLogProjectTitle" class="text-3xl md:text-4xl font-bold mb-4">
+                    Access Log Processing & Analytics Pipeline
+                </h2>
+
+                <p class="text-gray-400 leading-relaxed mb-8">
+                    Built a structured log analytics workflow with PySpark DataFrame APIs to convert raw web server access logs into queryable columns, validate request data, and answer operational and security-oriented questions without using the RDD API.
+                </p>
+
+                <!-- Architecture -->
+                <section class="mb-10">
+                    <h3 class="text-2xl font-semibold mb-6 text-aurora-green">Architecture</h3>
+
+                    <div class="max-w-xl mx-auto space-y-3 text-center">
+                        <div class="bg-dark-card border border-dark-border rounded-xl p-4">
+                            <div class="font-semibold">Raw Web Server Log</div>
+                            <div class="text-sm text-gray-500 mt-1">access.log</div>
+                        </div>
+
+                        <div class="text-aurora-green text-xl"><i class="fas fa-arrow-down"></i></div>
+
+                        <div class="bg-dark-card border border-dark-border rounded-xl p-4">
+                            <div class="font-semibold">Spark DataFrame Ingestion</div>
+                            <div class="text-sm text-gray-500 mt-1">Read raw log lines as a DataFrame</div>
+                        </div>
+
+                        <div class="text-aurora-blue text-xl"><i class="fas fa-arrow-down"></i></div>
+
+                        <div class="bg-dark-card border border-dark-border rounded-xl p-4">
+                            <div class="font-semibold">Parsing & Structuring</div>
+                            <div class="text-sm text-gray-500 mt-1">Regex extraction → ip, timestamp, method, url, status, bytes, user_agent</div>
+                        </div>
+
+                        <div class="text-aurora-purple text-xl"><i class="fas fa-arrow-down"></i></div>
+
+                        <div class="bg-dark-card border border-dark-border rounded-xl p-4">
+                            <div class="font-semibold">DataFrame Transformations</div>
+                            <div class="text-sm text-gray-500 mt-1">select · filter · groupBy · agg · orderBy</div>
+                        </div>
+
+                        <div class="text-aurora-pink text-xl"><i class="fas fa-arrow-down"></i></div>
+
+                        <div class="bg-dark-card border border-dark-border rounded-xl p-4">
+                            <div class="font-semibold">Operational & Security Analytics</div>
+                            <div class="text-sm text-gray-500 mt-1">Traffic, status codes, URLs, user agents, request frequency</div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="grid md:grid-cols-2 gap-6 mb-10">
+                    <!-- What was implemented -->
+                    <section class="bg-dark-card border border-dark-border rounded-xl p-6">
+                        <h3 class="text-xl font-semibold mb-4 text-aurora-blue">What I Implemented</h3>
+                        <ul class="space-y-3 text-gray-400 list-disc pl-5">
+                            <li>Loaded raw Apache-style access logs with Spark DataFrame APIs.</li>
+                            <li>Parsed semi-structured log lines into typed, analytics-ready columns.</li>
+                            <li>Filtered successful requests with HTTP status 200.</li>
+                            <li>Aggregated request counts by IP address and URL.</li>
+                            <li>Calculated total transferred bytes and traffic by URL.</li>
+                            <li>Analyzed browser and device information from user-agent strings.</li>
+                        </ul>
+                    </section>
+
+                    <!-- Advanced analysis -->
+                    <section class="bg-dark-card border border-dark-border rounded-xl p-6">
+                        <h3 class="text-xl font-semibold mb-4 text-aurora-purple">Advanced Analysis</h3>
+                        <ul class="space-y-3 text-gray-400 list-disc pl-5">
+                            <li>Identified the successful URL generating the highest traffic volume.</li>
+                            <li>Grouped requests by IP address and minute for high-frequency request detection.</li>
+                            <li>Flagged IPs exceeding 1,000 requests per minute as a security-oriented analysis scenario.</li>
+                            <li>Compared the structured DataFrame approach with the earlier RDD-based implementation.</li>
+                        </ul>
+                    </section>
+                </div>
+
+                <!-- Data model -->
+                <section class="mb-10">
+                    <h3 class="text-2xl font-semibold mb-5 text-aurora-pink">Structured Data Model</h3>
+                    <div class="overflow-x-auto rounded-xl border border-dark-border">
+                        <table class="w-full text-left">
+                            <thead class="bg-dark-card">
+                                <tr>
+                                    <th class="px-4 py-3">Column</th>
+                                    <th class="px-4 py-3">Purpose</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-dark-border text-gray-400">
+                                <tr><td class="px-4 py-3 font-mono text-gray-300">ip</td><td class="px-4 py-3">Client IP address</td></tr>
+                                <tr><td class="px-4 py-3 font-mono text-gray-300">timestamp</td><td class="px-4 py-3">Request event time</td></tr>
+                                <tr><td class="px-4 py-3 font-mono text-gray-300">method</td><td class="px-4 py-3">HTTP method such as GET</td></tr>
+                                <tr><td class="px-4 py-3 font-mono text-gray-300">url</td><td class="px-4 py-3">Requested page or resource</td></tr>
+                                <tr><td class="px-4 py-3 font-mono text-gray-300">status</td><td class="px-4 py-3">HTTP response status</td></tr>
+                                <tr><td class="px-4 py-3 font-mono text-gray-300">bytes</td><td class="px-4 py-3">Response payload size</td></tr>
+                                <tr><td class="px-4 py-3 font-mono text-gray-300">user_agent</td><td class="px-4 py-3">Browser/device identification string</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Tech stack -->
+                <section>
+                    <h3 class="text-2xl font-semibold mb-5 text-aurora-green">Technologies & Concepts</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-badge px-4 py-2 rounded-full">Apache Spark</span>
+                        <span class="skill-badge px-4 py-2 rounded-full">PySpark</span>
+                        <span class="skill-badge px-4 py-2 rounded-full">DataFrame API</span>
+                        <span class="skill-badge px-4 py-2 rounded-full">Regex Parsing</span>
+                        <span class="skill-badge px-4 py-2 rounded-full">Semi-Structured Data</span>
+                        <span class="skill-badge px-4 py-2 rounded-full">Aggregation</span>
+                        <span class="skill-badge px-4 py-2 rounded-full">Log Analytics</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
 
     <!-- Education and qualifications section -->
     <section id="education" class="py-20">
@@ -821,6 +971,37 @@
     </footer>
 
     <script>
+        // Open a reusable project-details modal
+        function openProjectModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (!modal) return;
+
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close a reusable project-details modal
+        function closeProjectModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (!modal) return;
+
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+
+        // Allow Escape key to close any open project modal
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                document.querySelectorAll('[role="dialog"]').forEach(modal => {
+                    if (!modal.classList.contains('hidden')) {
+                        closeProjectModal(modal.id);
+                    }
+                });
+            }
+        });
+
         // Toggle the mobile navigation menu
         function toggleMobileMenu() {
             const menu = document.getElementById('mobileMenu');
