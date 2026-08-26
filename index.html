@@ -156,6 +156,7 @@
                     <li><a href="#experience" class="hover:text-aurora-green transition">Experience</a></li>
                     <li><a href="#skills" class="hover:text-aurora-green transition">Skills</a></li>
                     <li><a href="#projects" class="hover:text-aurora-green transition">Projects</a></li>
+                    <li><a href="#posts" class="hover:text-aurora-green transition">Posts</a></li>
                     <li><a href="#education" class="hover:text-aurora-green transition">Education</a></li>
                     <li><a href="#contact" class="hover:text-aurora-green transition">Contact</a></li>
                 </ul>
@@ -173,6 +174,7 @@
                 <a href="#experience" class="block py-2 hover:text-aurora-green">Experience</a>
                 <a href="#skills" class="block py-2 hover:text-aurora-green">Skills</a>
                 <a href="#projects" class="block py-2 hover:text-aurora-green">Projects</a>
+                <a href="#posts" class="block py-2 hover:text-aurora-green">Posts</a>
                 <a href="#education" class="block py-2 hover:text-aurora-green">Education</a>
                 <a href="#contact" class="block py-2 hover:text-aurora-green">Contact</a>
             </div>
@@ -834,6 +836,106 @@
             </div>
         </div>
     </div>
+
+
+    <!-- LinkedIn posts section -->
+    <section id="posts" class="py-20 bg-dark-card/30">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-4 gradient-text">LinkedIn Posts</h2>
+            <p class="text-gray-400 text-center max-w-3xl mx-auto mb-12">
+                A growing collection of practical posts about data engineering, data quality, Apache Spark,
+                streaming, cloud data platforms, architecture, and lessons learned from hands-on projects.
+            </p>
+
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Post card template 1 -->
+                <article class="bg-dark-card rounded-lg overflow-hidden card-hover">
+                    <div class="relative h-48 bg-gradient-to-br from-aurora-green to-aurora-blue flex items-center justify-center overflow-hidden">
+                        <i class="fab fa-linkedin text-6xl text-dark-bg/80 absolute"></i>
+                        <!-- Replace with your post image, for example: posts/data-quality-day-1.jpg -->
+                        <img src="posts/post-1.jpg"
+                             alt="LinkedIn post preview"
+                             class="relative z-10 w-full h-full object-cover"
+                             onerror="this.style.display='none';">
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs uppercase tracking-wider text-aurora-green mb-2">LinkedIn Post</div>
+                        <h3 class="text-xl font-semibold mb-3">Add Your Latest Data Engineering Post</h3>
+                        <p class="text-gray-400 mb-5">
+                            Add a short 1–2 sentence summary explaining the topic, architecture, practical lesson, or key takeaway.
+                        </p>
+                        <!-- Replace the URL below with the direct LinkedIn post URL -->
+                        <a href="https://www.linkedin.com/in/reza-khanahmadloo/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="text-aurora-green hover:text-aurora-blue transition">
+                            View on LinkedIn <i class="fas fa-arrow-up-right-from-square ml-1"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Post card template 2 -->
+                <article class="bg-dark-card rounded-lg overflow-hidden card-hover">
+                    <div class="relative h-48 bg-gradient-to-br from-aurora-blue to-aurora-purple flex items-center justify-center overflow-hidden">
+                        <i class="fas fa-diagram-project text-6xl text-dark-bg/80 absolute"></i>
+                        <!-- Replace with your post image -->
+                        <img src="posts/post-2.jpg"
+                             alt="LinkedIn post preview"
+                             class="relative z-10 w-full h-full object-cover"
+                             onerror="this.style.display='none';">
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs uppercase tracking-wider text-aurora-blue mb-2">LinkedIn Post</div>
+                        <h3 class="text-xl font-semibold mb-3">Add a Pipeline or Architecture Post</h3>
+                        <p class="text-gray-400 mb-5">
+                            Use this card for a visual architecture, pipeline walkthrough, Spark/Kafka topic, or cloud data platform post.
+                        </p>
+                        <a href="https://www.linkedin.com/in/reza-khanahmadloo/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="text-aurora-blue hover:text-aurora-green transition">
+                            View on LinkedIn <i class="fas fa-arrow-up-right-from-square ml-1"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Post card template 3 -->
+                <article class="bg-dark-card rounded-lg overflow-hidden card-hover">
+                    <div class="relative h-48 bg-gradient-to-br from-aurora-purple to-aurora-pink flex items-center justify-center overflow-hidden">
+                        <i class="fas fa-chart-column text-6xl text-dark-bg/80 absolute"></i>
+                        <!-- Replace with your post image -->
+                        <img src="posts/post-3.jpg"
+                             alt="LinkedIn post preview"
+                             class="relative z-10 w-full h-full object-cover"
+                             onerror="this.style.display='none';">
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs uppercase tracking-wider text-aurora-purple mb-2">LinkedIn Post</div>
+                        <h3 class="text-xl font-semibold mb-3">Add a Data Quality or Analytics Post</h3>
+                        <p class="text-gray-400 mb-5">
+                            Highlight a practical framework, data-quality workflow, analytics insight, or reusable engineering pattern.
+                        </p>
+                        <a href="https://www.linkedin.com/in/reza-khanahmadloo/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="text-aurora-purple hover:text-aurora-green transition">
+                            View on LinkedIn <i class="fas fa-arrow-up-right-from-square ml-1"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="text-center mt-10">
+                <a href="https://www.linkedin.com/in/reza-khanahmadloo/recent-activity/all/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="inline-block px-8 py-3 border-2 border-aurora-blue rounded-full hover:bg-aurora-blue hover:text-dark-bg transition transform hover:scale-105">
+                    View All LinkedIn Activity
+                </a>
+            </div>
+        </div>
+    </section>
 
     <!-- Education and qualifications section -->
     <section id="education" class="py-20">
