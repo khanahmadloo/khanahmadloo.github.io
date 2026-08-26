@@ -197,17 +197,33 @@
 
                 <!-- Hero text -->
                 <div class="animate-slide-up text-center lg:text-left">
-                    <p class="text-aurora-green font-semibold tracking-widest uppercase mb-4">
-                        Data Engineer Portfolio
-                    </p>
+                    <!-- Personal identity: profile photo + name -->
+                    <div class="flex flex-col sm:flex-row items-center sm:items-center justify-center lg:justify-start gap-5 md:gap-6 mb-6">
+                        <div class="w-24 h-24 md:w-28 md:h-28 rounded-full bg-gradient-to-br from-aurora-green via-aurora-blue to-aurora-purple p-[3px] shrink-0 shadow-lg shadow-aurora-blue/10">
+                            <div class="w-full h-full rounded-full bg-dark-bg overflow-hidden">
+                                <img
+                                    src="mypic.png"
+                                    alt="Reza Khanahmadloo"
+                                    class="w-full h-full object-cover"
+                                    onerror="this.style.display='none';"
+                                >
+                            </div>
+                        </div>
 
-                    <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold mb-4 text-gray-100">
-                        Reza Khanahmadloo
-                    </h1>
+                        <div class="text-center sm:text-left">
+                            <p class="text-aurora-green font-semibold tracking-widest uppercase mb-3">
+                                Data Engineer Portfolio
+                            </p>
 
-                    <h2 class="text-2xl md:text-3xl xl:text-4xl font-semibold gradient-text mb-6">
-                        Data Engineer
-                    </h2>
+                            <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold mb-3 text-gray-100">
+                                Reza Khanahmadloo
+                            </h1>
+
+                            <h2 class="text-2xl md:text-3xl xl:text-4xl font-semibold gradient-text">
+                                Data Engineer
+                            </h2>
+                        </div>
+                    </div>
 
                     <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto lg:mx-0 mb-9 leading-relaxed">
                         Building reliable batch and streaming pipelines, data integration workflows,
