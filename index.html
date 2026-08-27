@@ -302,226 +302,286 @@
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-12 gradient-text">About Me</h2>
 
-            <div class="max-w-[1450px] mx-auto grid lg:grid-cols-[0.78fr_1.42fr] gap-10 xl:gap-12 items-center">
-                <div class="space-y-5">
-                    <p class="text-gray-400 leading-relaxed">
-                        I am a Data Engineer with hands-on experience building batch and streaming pipelines,
-                        integrating heterogeneous data sources, transforming and validating data, and preparing
-                        analytics-ready datasets for operational and analytical workloads.
-                    </p>
+            <!-- About text: full width above the technology stack -->
+            <div class="max-w-5xl mx-auto space-y-5">
+                <p class="text-gray-400 leading-relaxed">
+                    I am a Data Engineer with hands-on experience building batch and streaming pipelines,
+                    integrating heterogeneous data sources, transforming and validating data, and preparing
+                    analytics-ready datasets for operational and analytical workloads.
+                </p>
 
-                    <p class="text-gray-400 leading-relaxed">
-                        My work spans ETL/ELT, batch and near-real-time processing, CDC, data quality validation,
-                        dimensional modeling, incremental processing, orchestration, monitoring, troubleshooting,
-                        and source-to-target reconciliation.
-                    </p>
+                <p class="text-gray-400 leading-relaxed">
+                    My work spans ETL/ELT, batch and near-real-time processing, CDC, data quality validation,
+                    dimensional modeling, incremental processing, orchestration, monitoring, troubleshooting,
+                    and source-to-target reconciliation.
+                </p>
 
-                    <p class="text-gray-400 leading-relaxed">
-                        I work across modern data engineering technologies including Apache Spark, PySpark, Airflow,
-                        Kafka, PostgreSQL, SQL Server, ClickHouse, Snowflake, Microsoft Fabric, Azure, Databricks,
-                        AWS, Docker, Kubernetes, Git, Prometheus, Grafana, and Power BI.
-                    </p>
+                <p class="text-gray-400 leading-relaxed">
+                    I work across modern data engineering technologies including Python, Apache Spark, PySpark,
+                    Airflow, Kafka, PostgreSQL, SQL Server, ClickHouse, Snowflake, Microsoft Fabric, Azure,
+                    Databricks, AWS, Docker, Kubernetes, Git, Prometheus, Grafana, and Power BI.
+                </p>
 
-                    <p class="text-gray-400 leading-relaxed">
-                        My portfolio covers enterprise data integration, banking data warehousing and CDC,
-                        insurance and manufacturing analytics, operational log processing, lakehouse development,
-                        cloud data pipelines, and real-time streaming systems.
-                    </p>
-                </div>
+                <p class="text-gray-400 leading-relaxed">
+                    My portfolio covers enterprise data integration, banking data warehousing and CDC,
+                    insurance and manufacturing analytics, operational log processing, lakehouse development,
+                    cloud data pipelines, and real-time streaming systems.
+                </p>
+            </div>
 
-                <!-- Core Data Engineering Stack -->
-                <div class="relative">
-                    <div class="bg-dark-card/70 border border-dark-border rounded-2xl p-5 md:p-6 xl:p-7 shadow-xl">
-                        <div class="text-center mb-7">
-                            <p class="text-sm uppercase tracking-[0.25em] text-aurora-green font-semibold mb-2">
-                                Core Technologies
-                            </p>
-                            <h3 class="text-2xl font-bold text-gray-100">
-                                Core Data Engineering Stack
-                            </h3>
-                        </div>
-
-                        <!--
-                            Desktop layout: 8 columns × 2 rows.
-                            Related technologies are placed vertically in the same column:
-                            Kafka/NiFi, Spark/Flink, Airflow/dbt, PostgreSQL/MySQL,
-                            MongoDB/Cassandra, Azure/AWS, Databricks/Snowflake, Docker/Kubernetes.
-                        -->
-                        <div class="grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-8 gap-2.5 xl:gap-3">
-
-                            <!-- Row 1 -->
-
-                            <!-- Apache Kafka -->
-                            <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-blue transition">
-                                <img src="https://cdn.simpleicons.org/apachekafka/FFFFFF"
-                                     alt="Apache Kafka"
-                                     class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
-                                     loading="lazy">
-                                <span class="text-[13px] text-gray-300 text-center leading-snug">Apache Kafka</span>
-                            </div>
-
-                            <!-- Apache Spark -->
-                            <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-green transition">
-                                <img src="https://cdn.simpleicons.org/apachespark/E25A1C"
-                                     alt="Apache Spark"
-                                     class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
-                                     loading="lazy">
-                                <span class="text-[13px] text-gray-300 text-center leading-snug">Apache Spark</span>
-                            </div>
-
-                            <!-- Apache Airflow -->
-                            <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-pink transition">
-                                <img src="https://cdn.simpleicons.org/apacheairflow/017CEE"
-                                     alt="Apache Airflow"
-                                     class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
-                                     loading="lazy">
-                                <span class="text-[13px] text-gray-300 text-center leading-snug">Apache Airflow</span>
-                            </div>
-
-                            <!-- PostgreSQL -->
-                            <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-purple transition">
-                                <img src="https://cdn.simpleicons.org/postgresql/4169E1"
-                                     alt="PostgreSQL"
-                                     class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
-                                     loading="lazy"
-                                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                                <div class="hidden w-12 h-12 mb-3 rounded-xl items-center justify-center text-white text-xs font-bold"
-                                     style="background:#4169E1;">PG</div>
-                                <span class="text-[13px] text-gray-300 text-center leading-snug">PostgreSQL</span>
-                            </div>
-
-                            <!-- MongoDB -->
-                            <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-green transition">
-                                <img src="https://cdn.simpleicons.org/mongodb/47A248"
-                                     alt="MongoDB"
-                                     class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
-                                     loading="lazy"
-                                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                                <div class="hidden w-12 h-12 mb-3 rounded-xl items-center justify-center text-white text-xs font-bold"
-                                     style="background:#47A248;">MDB</div>
-                                <span class="text-[13px] text-gray-300 text-center leading-snug">MongoDB</span>
-                            </div>
-
-                            <!-- Microsoft Azure -->
-                            <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-green transition">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg"
-                                     alt="Microsoft Azure"
-                                     class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
-                                     loading="lazy">
-                                <span class="text-[13px] text-gray-300 text-center leading-snug">Microsoft Azure</span>
-                            </div>
-
-                            <!-- Databricks -->
-                            <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-blue transition">
-                                <img src="https://cdn.simpleicons.org/databricks/FF3621"
-                                     alt="Databricks"
-                                     class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
-                                     loading="lazy">
-                                <span class="text-[13px] text-gray-300 text-center leading-snug">Databricks</span>
-                            </div>
-
-                            <!-- Docker -->
-                            <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-purple transition">
-                                <img src="https://cdn.simpleicons.org/docker/2496ED"
-                                     alt="Docker"
-                                     class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
-                                     loading="lazy">
-                                <span class="text-[13px] text-gray-300 text-center leading-snug">Docker</span>
-                            </div>
-
-                            <!-- Row 2 -->
-
-                            <!-- Apache NiFi -->
-                            <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-blue transition">
-                                <img src="https://cdn.simpleicons.org/apachenifi/728E9B"
-                                     alt="Apache NiFi"
-                                     class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
-                                     loading="lazy"
-                                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                                <div class="hidden w-12 h-12 mb-3 rounded-xl items-center justify-center text-white text-xs font-bold"
-                                     style="background:#728E9B;">NiFi</div>
-                                <span class="text-[13px] text-gray-300 text-center leading-snug">Apache NiFi</span>
-                            </div>
-
-                            <!-- Apache Flink -->
-                            <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-green transition">
-                                <img src="https://cdn.simpleicons.org/apacheflink/E6526F"
-                                     alt="Apache Flink"
-                                     class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
-                                     loading="lazy"
-                                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                                <div class="hidden w-12 h-12 mb-3 rounded-xl items-center justify-center text-white text-xs font-bold"
-                                     style="background:#E6526F;">Flink</div>
-                                <span class="text-[13px] text-gray-300 text-center leading-snug">Apache Flink</span>
-                            </div>
-
-                            <!-- dbt -->
-                            <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-purple transition">
-                                <div class="w-12 h-12 mb-3 rounded-xl flex items-center justify-center group-hover:scale-110 transition shadow-sm"
-                                     style="background:#FF694B;"
-                                     aria-label="dbt">
-                                    <span class="text-white text-[17px] font-extrabold tracking-tight leading-none">dbt</span>
-                                </div>
-                                <span class="text-[13px] text-gray-300 text-center leading-snug">dbt</span>
-                            </div>
-
-                            <!-- MySQL -->
-                            <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-pink transition">
-                                <img src="https://cdn.simpleicons.org/mysql/4479A1"
-                                     alt="MySQL"
-                                     class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
-                                     loading="lazy"
-                                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                                <div class="hidden w-12 h-12 mb-3 rounded-xl items-center justify-center text-white text-xs font-bold"
-                                     style="background:#4479A1;">MySQL</div>
-                                <span class="text-[13px] text-gray-300 text-center leading-snug">MySQL</span>
-                            </div>
-
-                            <!-- Apache Cassandra -->
-                            <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-blue transition">
-                                <img src="https://cdn.simpleicons.org/apachecassandra/1287B1"
-                                     alt="Apache Cassandra"
-                                     class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
-                                     loading="lazy"
-                                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                                <div class="hidden w-12 h-12 mb-3 rounded-xl items-center justify-center text-white text-[10px] font-bold"
-                                     style="background:#1287B1;">Cassandra</div>
-                                <span class="text-[13px] text-gray-300 text-center leading-snug">Apache Cassandra</span>
-                            </div>
-
-                            <!-- AWS -->
-                            <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-blue transition">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
-                                     alt="AWS"
-                                     class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
-                                     loading="lazy">
-                                <span class="text-[13px] text-gray-300 text-center leading-snug">AWS</span>
-                            </div>
-
-                            <!-- Snowflake -->
-                            <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-green transition">
-                                <img src="https://cdn.simpleicons.org/snowflake/29B5E8"
-                                     alt="Snowflake"
-                                     class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
-                                     loading="lazy">
-                                <span class="text-[13px] text-gray-300 text-center leading-snug">Snowflake</span>
-                            </div>
-
-                            <!-- Kubernetes -->
-                            <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-pink transition">
-                                <img src="https://cdn.simpleicons.org/kubernetes/326CE5"
-                                     alt="Kubernetes"
-                                     class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
-                                     loading="lazy">
-                                <span class="text-[13px] text-gray-300 text-center leading-snug">Kubernetes</span>
-                            </div>
-
-                        </div>
-
-                        <p class="text-center text-sm text-gray-500 mt-6">
-                            Technologies I use across modern batch, streaming, cloud, orchestration, databases, and data platform workflows.
+            <!-- Core Data Engineering Stack: full width below the About text -->
+            <div class="max-w-[1450px] mx-auto mt-12">
+                <div class="bg-dark-card/70 border border-dark-border rounded-2xl p-5 md:p-6 xl:p-7 shadow-xl">
+                    <div class="text-center mb-7">
+                        <p class="text-sm uppercase tracking-[0.25em] text-aurora-green font-semibold mb-2">
+                            Core Technologies
                         </p>
+                        <h3 class="text-2xl font-bold text-gray-100">
+                            Core Data Engineering Stack
+                        </h3>
                     </div>
+
+                    <!--
+                        Responsive layout:
+                        Mobile: 2 columns
+                        Tablet: 4 columns
+                        Desktop: 7 columns × 3 rows
+                    -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-7 gap-3">
+
+                        <!-- Row 1 -->
+
+                        <!-- Apache Kafka -->
+                        <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-blue transition">
+                            <img src="https://cdn.simpleicons.org/apachekafka/FFFFFF"
+                                 alt="Apache Kafka"
+                                 class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
+                                 loading="lazy">
+                            <span class="text-[13px] text-gray-300 text-center leading-snug">Apache Kafka</span>
+                        </div>
+
+                        <!-- Apache Spark -->
+                        <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-green transition">
+                            <img src="https://cdn.simpleicons.org/apachespark/E25A1C"
+                                 alt="Apache Spark"
+                                 class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
+                                 loading="lazy">
+                            <span class="text-[13px] text-gray-300 text-center leading-snug">Apache Spark</span>
+                        </div>
+
+                        <!-- Apache Airflow -->
+                        <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-pink transition">
+                            <img src="https://cdn.simpleicons.org/apacheairflow/017CEE"
+                                 alt="Apache Airflow"
+                                 class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
+                                 loading="lazy">
+                            <span class="text-[13px] text-gray-300 text-center leading-snug">Apache Airflow</span>
+                        </div>
+
+                        <!-- PostgreSQL -->
+                        <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-purple transition">
+                            <img src="https://cdn.simpleicons.org/postgresql/4169E1"
+                                 alt="PostgreSQL"
+                                 class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="hidden w-12 h-12 mb-3 rounded-xl items-center justify-center text-white text-xs font-bold"
+                                 style="background:#4169E1;">PG</div>
+                            <span class="text-[13px] text-gray-300 text-center leading-snug">PostgreSQL</span>
+                        </div>
+
+                        <!-- MongoDB -->
+                        <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-green transition">
+                            <img src="https://cdn.simpleicons.org/mongodb/47A248"
+                                 alt="MongoDB"
+                                 class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="hidden w-12 h-12 mb-3 rounded-xl items-center justify-center text-white text-xs font-bold"
+                                 style="background:#47A248;">MDB</div>
+                            <span class="text-[13px] text-gray-300 text-center leading-snug">MongoDB</span>
+                        </div>
+
+                        <!-- Microsoft Azure -->
+                        <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-green transition">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg"
+                                 alt="Microsoft Azure"
+                                 class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
+                                 loading="lazy">
+                            <span class="text-[13px] text-gray-300 text-center leading-snug">Microsoft Azure</span>
+                        </div>
+
+                        <!-- Databricks -->
+                        <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-blue transition">
+                            <img src="https://cdn.simpleicons.org/databricks/FF3621"
+                                 alt="Databricks"
+                                 class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
+                                 loading="lazy">
+                            <span class="text-[13px] text-gray-300 text-center leading-snug">Databricks</span>
+                        </div>
+
+                        <!-- Row 2 -->
+
+                        <!-- Apache NiFi -->
+                        <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-blue transition">
+                            <img src="https://cdn.simpleicons.org/apachenifi/728E9B"
+                                 alt="Apache NiFi"
+                                 class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="hidden w-12 h-12 mb-3 rounded-xl items-center justify-center text-white text-xs font-bold"
+                                 style="background:#728E9B;">NiFi</div>
+                            <span class="text-[13px] text-gray-300 text-center leading-snug">Apache NiFi</span>
+                        </div>
+
+                        <!-- Apache Flink -->
+                        <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-green transition">
+                            <img src="https://cdn.simpleicons.org/apacheflink/E6526F"
+                                 alt="Apache Flink"
+                                 class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="hidden w-12 h-12 mb-3 rounded-xl items-center justify-center text-white text-xs font-bold"
+                                 style="background:#E6526F;">Flink</div>
+                            <span class="text-[13px] text-gray-300 text-center leading-snug">Apache Flink</span>
+                        </div>
+
+                        <!-- dbt -->
+                        <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-purple transition">
+                            <div class="w-12 h-12 mb-3 rounded-xl flex items-center justify-center group-hover:scale-110 transition shadow-sm"
+                                 style="background:#FF694B;"
+                                 aria-label="dbt">
+                                <span class="text-white text-[17px] font-extrabold tracking-tight leading-none">dbt</span>
+                            </div>
+                            <span class="text-[13px] text-gray-300 text-center leading-snug">dbt</span>
+                        </div>
+
+                        <!-- MySQL -->
+                        <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-pink transition">
+                            <img src="https://cdn.simpleicons.org/mysql/4479A1"
+                                 alt="MySQL"
+                                 class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="hidden w-12 h-12 mb-3 rounded-xl items-center justify-center text-white text-xs font-bold"
+                                 style="background:#4479A1;">MySQL</div>
+                            <span class="text-[13px] text-gray-300 text-center leading-snug">MySQL</span>
+                        </div>
+
+                        <!-- Apache Cassandra -->
+                        <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-blue transition">
+                            <img src="https://cdn.simpleicons.org/apachecassandra/1287B1"
+                                 alt="Apache Cassandra"
+                                 class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="hidden w-12 h-12 mb-3 rounded-xl items-center justify-center text-white text-[10px] font-bold"
+                                 style="background:#1287B1;">Cassandra</div>
+                            <span class="text-[13px] text-gray-300 text-center leading-snug">Apache Cassandra</span>
+                        </div>
+
+                        <!-- AWS -->
+                        <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-blue transition">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+                                 alt="AWS"
+                                 class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
+                                 loading="lazy">
+                            <span class="text-[13px] text-gray-300 text-center leading-snug">AWS</span>
+                        </div>
+
+                        <!-- Snowflake -->
+                        <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-green transition">
+                            <img src="https://cdn.simpleicons.org/snowflake/29B5E8"
+                                 alt="Snowflake"
+                                 class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
+                                 loading="lazy">
+                            <span class="text-[13px] text-gray-300 text-center leading-snug">Snowflake</span>
+                        </div>
+
+                        <!-- Row 3 -->
+
+                        <!-- Python -->
+                        <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-blue transition">
+                            <img src="https://cdn.simpleicons.org/python/3776AB"
+                                 alt="Python"
+                                 class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="hidden w-12 h-12 mb-3 rounded-xl items-center justify-center text-white text-xs font-bold"
+                                 style="background:#3776AB;">Py</div>
+                            <span class="text-[13px] text-gray-300 text-center leading-snug">Python</span>
+                        </div>
+
+                        <!-- Microsoft Fabric -->
+                        <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-green transition">
+                            <div class="w-12 h-12 mb-3 rounded-xl flex items-center justify-center group-hover:scale-110 transition shadow-sm"
+                                 style="background:linear-gradient(135deg,#0F6CBD,#00B7C3);"
+                                 aria-label="Microsoft Fabric">
+                                <span class="text-white text-[11px] font-extrabold tracking-tight leading-none">Fabric</span>
+                            </div>
+                            <span class="text-[13px] text-gray-300 text-center leading-snug">Microsoft Fabric</span>
+                        </div>
+
+                        <!-- ClickHouse -->
+                        <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-yellow transition">
+                            <img src="https://cdn.simpleicons.org/clickhouse/FFCC01"
+                                 alt="ClickHouse"
+                                 class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="hidden w-12 h-12 mb-3 rounded-xl items-center justify-center text-black text-[10px] font-bold"
+                                 style="background:#FFCC01;">CH</div>
+                            <span class="text-[13px] text-gray-300 text-center leading-snug">ClickHouse</span>
+                        </div>
+
+                        <!-- Prometheus -->
+                        <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-pink transition">
+                            <img src="https://cdn.simpleicons.org/prometheus/E6522C"
+                                 alt="Prometheus"
+                                 class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="hidden w-12 h-12 mb-3 rounded-xl items-center justify-center text-white text-[10px] font-bold"
+                                 style="background:#E6522C;">Prom</div>
+                            <span class="text-[13px] text-gray-300 text-center leading-snug">Prometheus</span>
+                        </div>
+
+                        <!-- Grafana -->
+                        <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-orange transition">
+                            <img src="https://cdn.simpleicons.org/grafana/F46800"
+                                 alt="Grafana"
+                                 class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="hidden w-12 h-12 mb-3 rounded-xl items-center justify-center text-white text-[10px] font-bold"
+                                 style="background:#F46800;">Grafana</div>
+                            <span class="text-[13px] text-gray-300 text-center leading-snug">Grafana</span>
+                        </div>
+
+                        <!-- Docker -->
+                        <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-purple transition">
+                            <img src="https://cdn.simpleicons.org/docker/2496ED"
+                                 alt="Docker"
+                                 class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
+                                 loading="lazy">
+                            <span class="text-[13px] text-gray-300 text-center leading-snug">Docker</span>
+                        </div>
+
+                        <!-- Kubernetes -->
+                        <div class="group flex flex-col items-center justify-center min-h-32 p-3 rounded-xl bg-dark-bg/70 border border-dark-border hover:border-aurora-pink transition">
+                            <img src="https://cdn.simpleicons.org/kubernetes/326CE5"
+                                 alt="Kubernetes"
+                                 class="w-12 h-12 mb-3 object-contain group-hover:scale-110 transition"
+                                 loading="lazy">
+                            <span class="text-[13px] text-gray-300 text-center leading-snug">Kubernetes</span>
+                        </div>
+
+                    </div>
+
+                    <p class="text-center text-sm text-gray-500 mt-6">
+                        Technologies I use across modern batch, streaming, cloud, orchestration, databases,
+                        analytics platforms, containerized workloads, and observability.
+                    </p>
                 </div>
             </div>
         </div>
