@@ -298,26 +298,44 @@
     </section>
 
     <!-- About section -->
-    <section id="about" class="pt-10 pb-12 relative">
+    <section id="about" class="pt-24 md:pt-28 pb-12 relative">
         <div class="container mx-auto px-3 md:px-4 xl:px-5">
-            <h2 class="text-4xl font-bold text-center mb-5 gradient-text">About Me</h2>
 
-            <!-- Compact About summary -->
+            <!-- About heading -->
+            <h2 class="text-4xl font-bold text-center mb-5 gradient-text">
+                About Me
+            </h2>
+
+            <!-- Full original About text -->
             <div class="max-w-[1500px] mx-auto text-gray-400 leading-relaxed text-[15px] md:text-base">
-                <p class="mb-3">
+                <p class="mb-4">
                     I am a Data Engineer with hands-on experience building batch and streaming pipelines,
                     integrating heterogeneous data sources, transforming and validating data, and preparing
                     analytics-ready datasets for operational and analytical workloads.
                 </p>
 
+                <p class="mb-4">
+                    My work spans ETL/ELT, batch and near-real-time processing, CDC, data quality validation,
+                    dimensional modeling, incremental processing, orchestration, monitoring, troubleshooting,
+                    and source-to-target reconciliation.
+                </p>
+
+                <p class="mb-4">
+                    I work across modern data engineering technologies including Python, Apache Spark, PySpark,
+                    Airflow, Kafka, PostgreSQL, SQL Server, ClickHouse, Snowflake, Microsoft Fabric, Azure,
+                    Databricks, AWS, Docker, Kubernetes, Git, Prometheus, Grafana, and Power BI.
+                </p>
+
                 <p>
-                    My work spans ETL/ELT, CDC, data quality, dimensional modeling, orchestration, monitoring,
-                    cloud data platforms, lakehouse development, real-time streaming, and source-to-target
-                    reconciliation across enterprise and analytics-focused data solutions.
+                    My portfolio covers enterprise data integration, banking data warehousing and CDC,
+                    insurance and manufacturing analytics, operational log processing, lakehouse development,
+                    cloud data pipelines, and real-time streaming systems.
                 </p>
             </div>
 
-            <!-- Core Data Engineering Stack -->
+            <!-- More breathing room before the stack -->
+            <div class="mt-10 md:mt-12">
+                <!-- Core Data Engineering Stack -->
             <div class="max-w-[1650px] mx-auto mt-7">
                 <div class="bg-dark-card/70 border border-dark-border rounded-2xl p-4 md:p-5 shadow-xl">
                     <h3 class="text-xl md:text-2xl font-bold text-center text-gray-100 mb-5">
@@ -550,6 +568,8 @@
 
                     </div>
                 </div>
+            </div>
+
             </div>
         </div>
     </section>
